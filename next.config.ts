@@ -7,7 +7,20 @@ const nextConfig: NextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true
+  },
+webpack: (config, { isServer }) => {
+  if (!isServer) {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      net: false,
+      tls: false,
+      fs: false,
+      os: false,
+      child_process: false,
+    };
   }
+  return config;
+},
 };
 
 export default nextConfig;
