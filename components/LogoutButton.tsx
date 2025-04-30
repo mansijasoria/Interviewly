@@ -17,12 +17,12 @@ const LogoutButton = () => {
 
   return (
     <button
-      onClick={handleLogout}
-      className="flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2 text-sm font-semibold !bg-primary-200 !text-dark-100 hover:!bg-primary-200/80 transition cursor-pointer "
-    >
-      <LogOut className="h-4 w-4" /> {/* Logout icon */}
-      Logout
-    </button>
+    onClick={handleLogout}
+    className="flex items-center justify-center gap-2 rounded-md border border-gray-300 px-4 py-2 text-sm font-semibold !bg-primary-200 !text-dark-100 hover:!bg-primary-200/80 transition cursor-pointer"
+  >
+    <LogOut className="h-4 w-4" />
+    <span className="hidden sm:block">Logout</span>
+  </button>
   )
 }
 
