@@ -60,9 +60,7 @@ npm run dev
 
 Open your browser and go to `http://localhost:3000`
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Created%20by-Karan%20Panchal-4B8BF5?style=flat&logo=github&logoColor=white" alt="Created by Karan Panchal" />
-</p>
+
 <p align="center">
   ✨ <strong>Mansi Jasoria</strong>
 </p>
